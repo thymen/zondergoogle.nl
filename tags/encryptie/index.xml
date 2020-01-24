@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encryptie on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/encryptie/</link>
+    <description>Recent content in Encryptie on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 19 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/encryptie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keybase: Voorkom nep-accounts met een ketting</title>
+      <link>https://zondergoogle.nl/post/keybase-voorkom-nep-accounts-met-een-ketting/</link>
+      <pubDate>Wed, 19 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/keybase-voorkom-nep-accounts-met-een-ketting/</guid>
+      <description>&lt;p&gt;Vorige week werd een vrouw bedreigd omdat ze beledigende tekst over Ajax
+voetballer Nouri zou hebben geschreven. De beschuldigingen waren onterecht;
+iemand met exact dezelfde naam op Facebook had de berichten geplaatst. De
+start-up Keybase.io werkt aan een app die dit soort identiteitsfraude misschien
+kan voorkomen.
+ &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

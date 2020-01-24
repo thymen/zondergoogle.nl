@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Haal schimmige trackers uit de schaduw met Lightbeam &middot; Zonder Google</title>
+  <meta property="og:title" content="Haal schimmige trackers uit de schaduw met Lightbeam" />
+  <meta name="twitter:title" content="Haal schimmige trackers uit de schaduw met Lightbeam" />
+  <meta name="description" content="De wereld van trackers die ons internetgedrag volgen is onzichtbaar. De browser
+plugin Lightbeam doet hier wat aan: ze laat zien welke partijen meekijken
+tijdens het internetten. Na een dag testen had de plugin al 242 externe websites
+gevonden die me volgde. In dit artikel leg ik uit hoe Lightbeam trackers
+ontmaskert.
+">
+  <meta property="og:description" content="De wereld van trackers die ons internetgedrag volgen is onzichtbaar. De browser
+plugin Lightbeam doet hier wat aan: ze laat zien welke partijen meekijken
+tijdens het internetten. Na een dag testen had de plugin al 242 externe websites
+gevonden die me volgde. In dit artikel leg ik uit hoe Lightbeam trackers
+ontmaskert.
+">
+  <meta name="twitter:description" content="De wereld van trackers die ons internetgedrag volgen is onzichtbaar. De browser
+plugin Lightbeam doet hier wat aan: ze laat zien welke partijen meekijken
+tijdens het internetten. Na een dag testen had …">
+  <meta name="author" content="Thymen Wabeke"/>
+  <link href='https://zondergoogle.nl/img/favicon.png' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://zondergoogle.nl/img/covers/connected-world-2.jpg" />
+  <meta name="twitter:image" content="https://zondergoogle.nl/img/covers/connected-world-2.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://zondergoogle.nl/post/haal-schimmige-trackers-uit-de-schaduw-met-lightbeam/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zonder Google" />
+
+  <meta name="generator" content="Hugo 0.25.1" />
+  <link rel="canonical" href="https://zondergoogle.nl/post/haal-schimmige-trackers-uit-de-schaduw-met-lightbeam/" />
+  <link rel="alternate" href="https://zondergoogle.nl/index.xml" type="application/rss+xml" title="Zonder Google">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://zondergoogle.nl/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  
+
+
+<link rel="stylesheet" href="https://zondergoogle.nl/css/main-zondergoogle.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://zondergoogle.nl">Zonder Google
+        <span class="navbar-brand-subtitle">&nbsp;Recept tegen datahongerige internetdiensten</span></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Over" href="/over/">Over</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags/">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Contact" href="/contact/">Contact</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Zonder Google" href="https://zondergoogle.nl">
+            <img class="avatar-img" src="https://zondergoogle.nl/img/fa_shield.png" alt="Zonder Google" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://zondergoogle.nl/img/covers/connected-world-2.jpg" ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Haal schimmige trackers uit de schaduw met Lightbeam</h1>
+                  
+                  
+                    <span class="post-meta">
+  Gepubliceerd op 26/07/2017
+  &nbsp;&bull;&nbsp;
+  Delen op
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f" rel="nofollow" target="_blank" title="Deel artikel op Facebook">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-facebook fa-stack-1x"></i>
+    </span>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f&title=Haal%20schimmige%20trackers%20uit%20de%20schaduw%20met%20Lightbeam" rel="nofollow" target="_blank" title="Deel artikel op LinkedIn">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span>
+  </a>
+  <a href="mailto:?subject=Haal%20schimmige%20trackers%20uit%20de%20schaduw%20met%20Lightbeam&amp;body=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f" rel="nofollow" title="Deel artikel via e-mail">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-envelope fa-stack-1x"></i>
+    </span>
+  </a>
+  
+</span>
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Haal schimmige trackers uit de schaduw met Lightbeam</h1>
+                
+                
+                  <span class="post-meta">
+  Gepubliceerd op 26/07/2017
+  &nbsp;&bull;&nbsp;
+  Delen op
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f" rel="nofollow" target="_blank" title="Deel artikel op Facebook">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-facebook fa-stack-1x"></i>
+    </span>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f&title=Haal%20schimmige%20trackers%20uit%20de%20schaduw%20met%20Lightbeam" rel="nofollow" target="_blank" title="Deel artikel op LinkedIn">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x"></i>
+    </span>
+  </a>
+  <a href="mailto:?subject=Haal%20schimmige%20trackers%20uit%20de%20schaduw%20met%20Lightbeam&amp;body=https%3a%2f%2fzondergoogle.nl%2fpost%2fhaal-schimmige-trackers-uit-de-schaduw-met-lightbeam%2f" rel="nofollow" title="Deel artikel via e-mail">
+    <span class="fa-stack fa">
+      <i class="fa fa-square-o fa-stack-2x"></i>
+      <i class="fa fa-envelope fa-stack-1x"></i>
+    </span>
+  </a>
+  
+</span>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>De wereld van trackers die ons internetgedrag volgen is onzichtbaar. De browser
+plugin Lightbeam doet hier wat aan: ze laat zien welke partijen meekijken
+tijdens het internetten. Na een dag testen had de plugin al 242 externe websites
+gevonden die me volgde. In dit artikel leg ik uit hoe Lightbeam trackers
+ontmaskert.
+</p>
+
+<h2 id="trackers-zijn-schimmige-spionnen">Trackers zijn schimmige spionnen</h2>
+
+<p>Trackers worden vaak toegevoegd aan websites om het gedrag van bezoekers te
+monitoren. Hierdoor kan een marketeer bijvoorbeeld snel zien welke onderdelen
+van een website populair zijn. Ook worden trackers gebruikt door adverteerders
+en <a href="https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/">social media bedrijven</a>
+om de interesses van bezoekers te bepalen.</p>
+
+<p>Wat ik vervelend vind aan trackers is dat ze anoniem zijn. Tijdens een
+websitebezoek heb ik geen idee welke partijen meekijken. Ook is onduidelijk
+hoevaak een tracker me volgt. Het maakt namelijk verschil of een tracker het
+gedrag op één website kan volgen of dat hij terug komt op meerdere sites. In het
+laatste geval kan een tracker verbanden zien tussen meerdere websites. Dezelfde
+tracker ziet bijvoorbeeld dat je &rsquo;s ochtends geïnteresseerd bent in
+privacywetgeving en na het avondeten een recensie leest over een wifi-router.</p>
+
+<p>Het installeren van een blocker is de makkelijkste manier om trackers buiten de
+deur te houden. Eerder schreef ik over het <a href="https://zondergoogle.nl/post/verbreek-de-verbinding-met-trackers-op-je-smartphone/">blokkeren van trackers op een
+smartphone</a>. De
+onderzoeker in mij wil echter meer. Ik wil graag weten welke bedrijven me op
+welke websites volgen. Dat kan heel eenvoudig met Lightbeam.</p>
+
+<h2 id="ontmasker-de-anonieme-tracker">Ontmasker de anonieme tracker</h2>
+
+<p>
+<a target="_blank" href="https://www.mozilla.org/nl/lightbeam/">Lightbeam<i class="fa fa-external-link external-link"></i></a> 
+ is een
+Firefox-plugin die monitort welke websites je bezoekt. De plugin houdt ook bij
+welke externe servers op de achtergrond worden benaderd door bezochte websites.
+Vervolgens bepaalt Lightbeam of een externe server de server van een tracker is
+(hoe dit precies gebeurt is me overigens onduidelijk). De resultaten worden
+weergeven in een netwerk. Hierin staan de bezochte websites, maar veel
+interessanter zijn de trackers en verbindingen tussen trackers en websites.</p>
+
+<p>In onderstaande TED Talk vertelt Gary Kovacs, destijds CEO van Mozilla, over
+zijn motivatie voor het Lightbeam-project (voorheen Collusion):</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/f_f5wNw-2c0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
+
+<h2 id="resultaat-na-24-uur-internetten">Resultaat na 24 uur internetten</h2>
+
+<p>De hoogste tijd om Lightbeam zelf te proberen. Van woensdag 12 juli 13:00 tot
+donderdag 13 juli 13:00 uur heb ik alle blockers uitgeschakeld en externe
+websites gevold met Lightbeam. Gedurende dit experiment heb ik me zo normaal
+mogelijk gedragen. Dat wil zeggen dat ik overdag aan TNO-projecten heb gewerkt.
+Woensdagavond heb ik doelloos geïnternet, met name voor dit blog.</p>
+
+<p>Het resultaat na 24 uur internetten is als volgt. Ik bezocht 56 websites. Het
+aantal trackers ligt een stuk hoger: op de achtergrond heeft mijn browser
+verbinding gemaakt met maar liefst 242 externe websites!</p>
+
+<p>De afbeeldingen hieronder laten het netwerk van bezochte en externe websites
+zien. Websites die ik heb bezocht zijn cirkels. Een cirkel is groter als een
+website meer trackers bevat. De driehoeken zijn trackers: veelgebruikte trackers
+hebben grotere driehoeken. Tenslotte geven de lijnen connecties aan. Bevat
+website A tracker X, dan is een lijn getekend tussen cirkel A en driehoek X.</p>
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+  
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/lightbeam_full-thumb.png');">
+      <img itemprop="thumbnail" src="/img/lightbeam_full-thumb.png" alt="Dit is het volledige netwerk van bezochte websites (cirkels) en trackers (driehoeken) waarmee ik verbinding maakte."/>
+    </div>
+      <figcaption>
+          <p>Volledig overzicht</p>
+      </figcaption>
+    <a href="/img/lightbeam_full.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+  
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/lightbeam_websites_visited-thumb.png');">
+      <img itemprop="thumbnail" src="/img/lightbeam_websites_visited-thumb.png" alt="Dit zijn alle websites die ik bezocht. Grotere cirkels bevatten meer trackers."/>
+    </div>
+      <figcaption>
+          <p>Bezochte websites</p>
+      </figcaption>
+    <a href="/img/lightbeam_websites_visited.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+  
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/lightbeam_trackers_found-thumb.png');">
+      <img itemprop="thumbnail" src="/img/lightbeam_trackers_found-thumb.png" alt="Dit zijn alle trackers waarmee op de achtergrond verbinding werd gemaakt. Grotere driehoeken zijn trackers die op meer websites worden gebruikt."/>
+    </div>
+      <figcaption>
+          <p>Gevonden trackers</p>
+      </figcaption>
+    <a href="/img/lightbeam_trackers_found.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+</div>
+
+<p>Uit het netwerk kan je een aantal dingen afleiden. Bijvoorbeeld een top drie van
+veelvoorkomende trackers en websites met de meeste trackers:</p>
+
+<h3 id="sites-met-meeste-trackers-grote-cirkels">Sites met meeste trackers (grote cirkels):</h3>
+
+<ul>
+<li><code>crunchbase.com</code>: website met een lijst van bedrijven en hun de investeerders.</li>
+<li><code>mongodb.com</code>: website van een database.</li>
+<li><code>stackoverflow.com</code>: website met antwoorden op technische vragen.</li>
+</ul>
+
+<h3 id="trackers-die-het-meest-worden-gebruikt-grote-driehoeken">Trackers die het meest worden gebruikt (grote driehoeken):</h3>
+
+<ul>
+<li><code>google-analytics.com</code>: Google&rsquo;s tool voor het monitoren van website bezoekers.</li>
+<li><code>fonts.googleapis.com</code>: Google&rsquo;s tool om lettertypes te gebruiken op websites.</li>
+<li><code>doubleclick.net</code>: Google&rsquo;s dochteronderneming voor advertenties.</li>
+</ul>
+
+<p>Merk op dat dit de resultaten zijn van een steekproef. Voor een echt experiment
+moet Lightbeam bijvoorbeeld worden geïnstalleerd bij meer personen. Dat gezegd
+hebbende gaf het spelen met de plugin mij een goed, persoonlijk inkijkje in de
+onzichtbare wereld van externe websites die op de achtergrond worden bezocht. Ik
+had niet verwacht dat de plugin in slechts 24 uur zo veel trackers zou vinden.
+Een extra motivatie dus om snel een plugin te installeren die trackers
+blokkeert.</p>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://zondergoogle.nl/post/keybase-voorkom-nep-accounts-met-een-ketting/" data-toggle="tooltip" data-placement="top" title="Keybase: Voorkom nep-accounts met een ketting">&larr; Vorige artikel</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/" data-toggle="tooltip" data-placement="top" title="Moeten we kiezen of delen tussen privacy en social media buttons?">Volgende artikel &rarr;</a>
+          </li>
+        
+      </ul>
+
+      <br />
+
+      <div class="well" >
+        <h2>Nieuwsbrief</h2>
+        <p>
+          Wil je een bericht ontvangen als er nieuw artikel online staat?
+        </p>
+        <form class="form-inline" id="form-newsletter" action="/api/subscribe">
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="haantje@devoorste.nl">
+          </div>
+          <button type="submit" class="btn btn-default">Aanmelden voor nieuwsbrief</button>
+        </form>
+        <p id="result-newsletter"></id>
+
+      </div>
+
+      
+        <div class="comments disqus-comments well">
+          <h2>Reacties</h2>
+          <p>Je e-mail adres wordt niet gepubliceerd.</p>
+          <section id="isso-thread"></section>
+        </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@zondergoogle.nl" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/thymenw" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://keybase.io/thymen" title="Keybase">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-key fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://zondergoogle.nl/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          Thymen Wabeke
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://zondergoogle.nl">Zonder Google</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://zondergoogle.nl/open-source-helden/">Open source helden</a> &nbsp;&bull;&nbsp; <a href="https://zondergoogle.nl/over/">Over</a> &nbsp;&bull;&nbsp; <a href="https://zondergoogle.nl/contact/">Contact</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://zondergoogle.nl/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+<script data-isso="//comments.zondergoogle.nl/"
+        src="//comments.zondergoogle.nl/js/embed.min.js"
+        data-isso-lang="nl"
+        data-isso-reply-to-self="false"
+        data-isso-require-author="true"
+        data-isso-require-email="true"></script>
+<script>
+
+$( "#form-newsletter" ).submit(function( event ) {
+
+  
+  event.preventDefault();
+
+  
+  var $form = $( this ),
+    url = $form.attr( "action" );
+
+  
+  var posting = $.post( url, $("#form-newsletter").serialize() );
+
+  
+  posting.always(function( data ) {
+    console.log(data);
+    $( "#result-newsletter" ).empty().append( data.message );
+    $( "#result-newsletter" ).show();
+  });
+});
+</script>
+
+
+  </body>
+</html>
+

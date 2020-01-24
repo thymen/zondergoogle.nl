@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hotmail on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/hotmail/</link>
+    <description>Recent content in Hotmail on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/hotmail/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>E-mail kent geen briefgeheim</title>
+      <link>https://zondergoogle.nl/post/email-kent-geen-briefgeheim/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/email-kent-geen-briefgeheim/</guid>
+      <description>&lt;p&gt;Gmail, Hotmail en Outlook.com maken e-mailen zo makkelijk. E-mails zijn
+toegankelijk vanaf ieder apparaat en elke locatie. Recente berichten maar ook
+e-mails van jaren terug. In mailboxen staat van alles: tickets, bestellingen,
+liefdesbieven, foto’s en ga zo maar door. Handig natuurlijk dat jij toegang hebt
+tot dit persoonlijke archief, maar je bent niet de enige. Mailaanbieders lezen
+ook graag mee. &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

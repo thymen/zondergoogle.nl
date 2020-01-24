@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Media on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/social-media/</link>
+    <description>Recent content in Social Media on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moeten we kiezen of delen tussen privacy en social media buttons?</title>
+      <link>https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/</guid>
+      <description>&lt;p&gt;Iedereen met een website wil graag dat zijn of haar pagina&amp;rsquo;s veel gelezen
+worden. Knoppen waarmee bezoekers pagina&amp;rsquo;s kunnen delen op social media zijn
+daarom erg belangrijk. Je vindt ze op bijna iedere website terug. Helaas zijn de
+standaard &lt;em&gt;Like&lt;/em&gt; en &lt;em&gt;Share&lt;/em&gt; knoppen slecht voor de privacy van bezoekers. In dit
+artikel vertel ik waarom we belang hebben bij privacyvriendelijke deelknoppen.
+ &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

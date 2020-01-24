@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trackers on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/trackers/</link>
+    <description>Recent content in Trackers on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/trackers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moeten we kiezen of delen tussen privacy en social media buttons?</title>
+      <link>https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/moeten-we-kiezen-of-delen-tussen-privacy-en-social-media-buttons/</guid>
+      <description>&lt;p&gt;Iedereen met een website wil graag dat zijn of haar pagina&amp;rsquo;s veel gelezen
+worden. Knoppen waarmee bezoekers pagina&amp;rsquo;s kunnen delen op social media zijn
+daarom erg belangrijk. Je vindt ze op bijna iedere website terug. Helaas zijn de
+standaard &lt;em&gt;Like&lt;/em&gt; en &lt;em&gt;Share&lt;/em&gt; knoppen slecht voor de privacy van bezoekers. In dit
+artikel vertel ik waarom we belang hebben bij privacyvriendelijke deelknoppen.
+ &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haal schimmige trackers uit de schaduw met Lightbeam</title>
+      <link>https://zondergoogle.nl/post/haal-schimmige-trackers-uit-de-schaduw-met-lightbeam/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/haal-schimmige-trackers-uit-de-schaduw-met-lightbeam/</guid>
+      <description>&lt;p&gt;De wereld van trackers die ons internetgedrag volgen is onzichtbaar. De browser
+plugin Lightbeam doet hier wat aan: ze laat zien welke partijen meekijken
+tijdens het internetten. Na een dag testen had de plugin al 242 externe websites
+gevonden die me volgde. In dit artikel leg ik uit hoe Lightbeam trackers
+ontmaskert.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Verbreek de verbinding met trackers op je smartphone</title>
+      <link>https://zondergoogle.nl/post/verbreek-de-verbinding-met-trackers-op-je-smartphone/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/verbreek-de-verbinding-met-trackers-op-je-smartphone/</guid>
+      <description>&lt;p&gt;Op de meeste websites staan trackers die het gedrag van bezoekers in de gaten
+houden. Trackers proberen meetgegevens te koppelen aan de identiteit van
+bezoekers; geen prettig idee. In dit artikel leg ik uit hoe je voorkomt dat
+trackers je volgen tijdens het internetten op een mobiel.
+ &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

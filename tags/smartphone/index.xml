@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartphone on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/smartphone/</link>
+    <description>Recent content in Smartphone on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/smartphone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Verbreek de verbinding met trackers op je smartphone</title>
+      <link>https://zondergoogle.nl/post/verbreek-de-verbinding-met-trackers-op-je-smartphone/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/verbreek-de-verbinding-met-trackers-op-je-smartphone/</guid>
+      <description>&lt;p&gt;Op de meeste websites staan trackers die het gedrag van bezoekers in de gaten
+houden. Trackers proberen meetgegevens te koppelen aan de identiteit van
+bezoekers; geen prettig idee. In dit artikel leg ik uit hoe je voorkomt dat
+trackers je volgen tijdens het internetten op een mobiel.
+ &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

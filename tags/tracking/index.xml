@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tracking on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/tracking/</link>
+    <description>Recent content in Tracking on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 21 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/tracking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Volgende halte: transparante wifi-tracking</title>
+      <link>https://zondergoogle.nl/post/ns-transparante-wifi-tracking/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/ns-transparante-wifi-tracking/</guid>
+      <description>&lt;p&gt;Afgelopen week maakte de NS bekend dat ze wifi-trackers inzet om reizigers op
+het station te volgen. De Autoriteit Persoonsgegevens reageerde vervolgens dat
+het belangrijk is dat reizigers goed op de hoogte zijn. Wat mij betreft is het
+vooral relevant om te weten &lt;em&gt;hoe&lt;/em&gt; je gevolgd wordt in plaats van &lt;em&gt;dat&lt;/em&gt; je
+gevolgd wordt. Het zou daarom mooi zijn als de NS transparant is in haar
+tracking methode. Hierdoor kunnen reizigers zelf nagaan of hun privacy in het
+geding is.
+ &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

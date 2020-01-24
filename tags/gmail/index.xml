@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gmail on Zonder Google</title>
+    <link>https://zondergoogle.nl/tags/gmail/</link>
+    <description>Recent content in Gmail on Zonder Google</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>mail@zondergoogle.nl (Thymen Wabeke)</managingEditor>
+    <webMaster>mail@zondergoogle.nl (Thymen Wabeke)</webMaster>
+    <lastBuildDate>Wed, 28 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zondergoogle.nl/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google staakt scannen e-mails: goed nieuws of slimme marketing?</title>
+      <link>https://zondergoogle.nl/post/google-staakt-scannen-emails/</link>
+      <pubDate>Wed, 28 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/google-staakt-scannen-emails/</guid>
+      <description>&lt;p&gt;Google 
+&lt;a target=&#34;_blank&#34; href=&#34;https://www.blog.google/products/gmail/g-suite-gains-traction-in-the-enterprise-g-suites-gmail-and-consumer-gmail-to-more-closely-align/&#34;&gt;maakte afgelopen vrijdag bekend&lt;i class=&#34;fa fa-external-link external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt; 
+
+dat ze Gmail-berichten niet langer scant. Goed nieuws, omdat de privacy van
+Gmail-gebruikers beter beschermt lijkt. Tegelijkertijd is het ook bijzonder
+omdat Google veel geld verdient met gepersonaliseerde advertenties. In dit
+artikel verklaar ik Google&amp;rsquo;s beslissing om e-mails niet langer te scannen.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>E-mail kent geen briefgeheim</title>
+      <link>https://zondergoogle.nl/post/email-kent-geen-briefgeheim/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mail@zondergoogle.nl (Thymen Wabeke)</author>
+      <guid>https://zondergoogle.nl/post/email-kent-geen-briefgeheim/</guid>
+      <description>&lt;p&gt;Gmail, Hotmail en Outlook.com maken e-mailen zo makkelijk. E-mails zijn
+toegankelijk vanaf ieder apparaat en elke locatie. Recente berichten maar ook
+e-mails van jaren terug. In mailboxen staat van alles: tickets, bestellingen,
+liefdesbieven, foto’s en ga zo maar door. Handig natuurlijk dat jij toegang hebt
+tot dit persoonlijke archief, maar je bent niet de enige. Mailaanbieders lezen
+ook graag mee. &lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
